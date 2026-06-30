@@ -96,8 +96,3 @@ def test_temporal_features_missing_column_raises():
     # (qui passerait inaperçue et corromprait l'entraînement).
     with pytest.raises(ValueError):
         add_temporal_features(df, value_cols=("temperature",))
-
-
-
-
-'-----BEGIN PRIVATE KEY-----\nMIIBVAIBADANBgkqhkiG9w0BAQEFAASCATEwgg... (faux)\n-----END PRIVATE KEY-----\

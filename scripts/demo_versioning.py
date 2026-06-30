@@ -14,7 +14,7 @@
 #  --no-dvc, --remote… Chaque brique externe (MLflow, DVC) est protégée par
 #  try/except : si l'outil manque, on saute l'étape proprement au lieu de planter.
 # =============================================================================
-"""Demo : versionner DONNEES + MODELE avec DVC et MLflow (InduSense Sprint 3).
+r"""Demo : versionner DONNEES + MODELE avec DVC et MLflow (InduSense Sprint 3).
 
 Ce script "tout-en-un" :
   1. entraine le modele sur le gold dataset (split TEMPOREL, sans fuite) ;
@@ -28,8 +28,10 @@ Ce script "tout-en-un" :
 Tout est idempotent et pilotable :  --no-mlflow / --no-dvc / --remote ...
 
     uv run python scripts/demo_versioning.py
-    uv run python scripts/demo_versioning.py --remote /tmp/dvc-store
+    uv run python scripts/demo_versioning.py --remote /tmp/dvc-store    # Mac/Linux
+    uv run python scripts/demo_versioning.py --remote C:\dvc-store      # Windows
 """
+
 from __future__ import annotations  # annotations de type modernes
 
 import argparse  # options de ligne de commande
@@ -178,7 +180,13 @@ def main() -> int:
     ap.add_argument("--n-estimators", type=int, default=200)  # nombre d'arbres du RandomForest
     ap.add_argument("--seed", type=int, default=42)  # graine (reproductibilité)
     ap.add_argument(
-        "--remote", type=str, default=None, help="chemin d'un remote DVC local (ex: /tmp/dvc-store)"
+        "--remote",
+        type=str,
+        default=None,
+        help=(
+            r"chemin d'un remote DVC local "
+            r"(ex: /tmp/dvc-store sous Mac/Linux, C:\dvc-store sous Windows)"
+        ),
     )
     ap.add_argument("--no-mlflow", action="store_true")  # sauter l'étape MLflow
     ap.add_argument("--no-dvc", action="store_true")  # sauter l'étape DVC

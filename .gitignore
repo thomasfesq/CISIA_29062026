@@ -34,3 +34,7 @@ build/
 !artifacts/models/.gitkeep
 !artifacts/models/rf.joblib
 !artifacts/models/model_metadata.json
+
+# Artefacts de demo MLflow (regenerables) — ne pas committer
+mlruns/
+mlflow.db

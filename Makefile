@@ -42,3 +42,7 @@ check:
 	uv run ruff check .
 	uv run black --check .
 	uv run indusense --help
+
+# Lancer l'API en local avec rechargement auto (module 25)
+serve:
+	uv run uvicorn indusense.api.main:app --reload

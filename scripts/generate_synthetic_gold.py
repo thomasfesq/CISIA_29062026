@@ -37,6 +37,7 @@ Le label `panne` est SYNTHETIQUE (loi logistique correlee a la temperature et a
 la pression), calibre autour du taux reel du gold (~10,5 %). Ce n'est donc pas
 une jointure d'incidents : c'est un flux de demonstration pour le versioning.
 """
+
 from __future__ import annotations  # annotations de type modernes
 
 import argparse  # analyse les arguments de la ligne de commande (--once, --minutes…)

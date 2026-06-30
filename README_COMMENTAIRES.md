@@ -47,3 +47,23 @@ repo d'origine, inchangés. Récupère-les depuis ton repo `CISIA_29062026`.
 ---
 
 *Sprint 3 CISIA « Industrialisation & déploiement » · InduSense 4.0 · AELION*
+
+---
+
+## ⭐ Mise à jour — RÉFÉRENCE COMPLÈTE & commentée (modules 23 → 34)
+
+Ce dépôt n'est plus seulement le *starter* (23-24) : c'est désormais la **solution complète commentée** que les étudiants peuvent étudier de bout en bout. Ajouté depuis le skeleton complet, **commenté ligne à ligne** :
+
+- **`src/indusense/api/`** — l'API FastAPI : `schemas.py` (contrat I/O Pydantic), `security.py` (clé API 401, rate limit 429, taille 413), `model_store.py` (chargement du modèle), `main.py` (`/health`, `/ready`, `/predict-tabular`, `/predict-image`, métriques Prometheus). *(modules 25-26)*
+- **`Dockerfile`** + **`.dockerignore`** — image multi-stage, non-root, Variante A. *(module 27)*
+- **`docker-compose.yml`** — stack api + PostgreSQL + Prometheus + Grafana. *(module 28)*
+- **`monitoring/prometheus.yml`** — scrape de `/metrics`. *(modules 33-34)*
+- **`tests/test_api.py`**, **`tests/test_security.py`** — vérifient 200/401/422/413/429 + normalisation `M-7`→`MACH-07`.
+- **`payload.json`** — exemple de requête pour `/predict-tabular`.
+- `pyproject.toml` complété (fastapi, uvicorn, prometheus-instrumentator, prefect, sqlalchemy, psycopg, scipy, evidently, mlflow…), `config.py` (+ `api_key`, `decision_threshold`), `Makefile` (cible `serve`).
+
+**Hygiène git** : `mlruns/` et `mlflow.db` (artefacts de démo MLflow) sortis du suivi git et ajoutés au `.gitignore`.
+
+✅ **Vérifié** : les 22 fichiers Python compilent et **`pytest` = 22/22 au vert** (loaders, temporal, gold, package, **api**, **sécurité**). `from indusense.api.main import app` fonctionne.
+
+> Note : les modules 29-30 (orchestration Prefect) et 34 (dashboard Grafana en JSON) se construisent en TP — leur **corrigé de code** est dans les fiches corrigé formateur et le tuto, pas un fichier figé du dépôt.

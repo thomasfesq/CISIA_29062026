@@ -35,6 +35,12 @@ class Settings(BaseSettings):
     random_seed: int = 42  # graine aléatoire = résultats REPRODUCTIBLES
     target_col: str = "panne"  # nom de la colonne à prédire (0 = OK, 1 = panne)
     incident_window_hours: int = 24  # fenêtre : on étiquette « panne » les 24 h AVANT un incident
+    # --- Réglages de l'API (modules 25-26) ---
+    # Clé attendue dans X-API-Key ; surcharger en prod via INDUSENSE_API_KEY.
+    api_key: str = "dev-key"
+    decision_threshold: float = (
+        0.5  # seuil proba → décision « alerte »/« ok » (INDUSENSE_DECISION_THRESHOLD)
+    )
 
 
 # On crée UNE instance partagée, importable partout via `from indusense.config import settings`.
