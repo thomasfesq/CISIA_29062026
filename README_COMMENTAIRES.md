@@ -67,3 +67,29 @@ Ce dépôt n'est plus seulement le *starter* (23-24) : c'est désormais la **sol
 ✅ **Vérifié** : les 22 fichiers Python compilent et **`pytest` = 22/22 au vert** (loaders, temporal, gold, package, **api**, **sécurité**). `from indusense.api.main import app` fonctionne.
 
 > Note : les modules 29-30 (orchestration Prefect) et 34 (dashboard Grafana en JSON) se construisent en TP — leur **corrigé de code** est dans les fiches corrigé formateur et le tuto, pas un fichier figé du dépôt.
+
+---
+
+## 🧹 Remise au propre (2026-06-30)
+
+Le dépôt a été **nettoyé du désordre laissé par une démo** : suppression des artefacts régénérables (`mlruns/`, `mlflow.db`, cache DVC, `metrics.json`/`params.yaml` vides) et de l'état DVC de démo (remote `/tmp/dvc-store` cassé). Les **données et le modèle sont de nouveau dans le dépôt en direct** (rien à `dvc pull`). Le `.venv/` et les caches ne sont pas livrés (régénère : `uv sync --extra dev`).
+
+> ⚠️ **Versionnement git à ré-initialiser sur ta machine.** L'environnement de préparation corrompait les écritures git de ce dossier ; le `.git` a été retiré. Sur ton poste (FS fiable) :
+> ```
+> cd indusense-skeleton/CISIA_29062026
+> git init && git add -A && git commit -m "Repo de reference InduSense Sprint 3 (propre)"
+> ```
+
+---
+
+## 🧭 Parcours de lecture par journée (J2 → J6)
+
+Pour t'y retrouver, voici **quels fichiers ouvrir chaque jour** (dans l'ordre) :
+
+- **J2 — API & sécurité (modules 25-26).** `src/indusense/api/schemas.py` (le **contrat** d'entrée/sortie, Pydantic) → `src/indusense/api/security.py` (clé d'API **401**, rate limit **429**, taille **413**) → `src/indusense/api/model_store.py` (chargement du modèle) → `src/indusense/api/main.py` (les routes `/health`, `/ready`, `/predict-tabular`) → `tests/test_api.py` + `tests/test_security.py` (ce qui est garanti). **Démarrer :** `uv run uvicorn indusense.api.main:app --reload`, puis ouvrir **http://localhost:8000/docs**.
+- **J3 — Conteneurisation (27-28).** `Dockerfile` (multi-stage, non-root) → `.dockerignore` → `docker-compose.yml` (api + PostgreSQL + Prometheus + Grafana). **Tester :** `docker build -t indusense .` puis `docker compose up`.
+- **J4 — Orchestration (29-30).** Le **flow Prefect se construit en TP** (corrigé dans les fiches formateur) ; appuie-toi sur `model_store.py` et la commande `indusense predict` (`cli.py`). Clé : l'**idempotence** (upsert, pas de doublon).
+- **J5 — Data drift (31-32).** Le calcul de drift (**Evidently**) se construit en TP ; fabrique une dérive avec `scripts/generate_synthetic_gold.py --drift`. Clé : on surveille les **entrées**.
+- **J6 — Observabilité (33-34) + Game Day.** `monitoring/prometheus.yml` (scrape de `/metrics`) → l'instrumentation dans `api/main.py` → dashboards **Grafana** (TP). Termine par le **Game Day** (fiche dédiée) : dérive → alerte → runbook → correction.
+
+> Rappel : tout le code de ce dépôt est **commenté ligne à ligne** (package, API, tests, scripts, Docker, monitoring, config). En cas de doute sur un mot, garde la fiche **Prérequis & glossaire** à côté de toi.

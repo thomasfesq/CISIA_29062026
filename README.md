@@ -54,6 +54,30 @@ uv run indusense train
 uv run indusense predict
 ```
 
+## Demarrer l'API (Sprint 3, J2)
+
+```bash
+uv run uvicorn indusense.api.main:app --reload
+```
+
+Puis ouvrir la doc interactive : http://localhost:8000/docs
+
+- `GET /health` : 200 (le serveur est vivant) ;
+- `GET /ready`  : 200 si le modele est charge, sinon 503 ;
+- `POST /predict-tabular` : prediction de panne (cle API requise).
+
+Exemple d'appel (la cle de demonstration est `dev-key`) :
+
+```bash
+curl -X POST http://localhost:8000/predict-tabular \
+  -H "X-API-Key: dev-key" -H "Content-Type: application/json" \
+  --data @payload.json
+```
+
+> Astuce Windows : depuis **PowerShell**, utilise `curl.exe` (pas l'alias `curl`) et remplace l'antislash de fin de ligne par un accent grave ; ou lance la commande depuis **Git Bash / WSL**.
+
+Codes attendus : sans cle -> 401, corps trop gros -> 413, trop de requetes -> 429, donnees invalides -> 422.
+
 ## Structure
 
 ```text
@@ -63,7 +87,15 @@ src/indusense/
   data/loaders.py
   features/temporal.py
   models/tabular.py
-tests/
+  api/              # Sprint 3 / J2 : l'API FastAPI
+    main.py         #   routes : /health /ready /predict-tabular /predict-image /metrics
+    schemas.py      #   contrat d'entree-sortie (Pydantic)
+    security.py     #   cle API (401), anti-flood (429), taille max (413)
+    model_store.py  #   chargement du modele au demarrage
+tests/              # dont test_api.py et test_security.py (J2)
+Dockerfile          # J3 : image multi-stage, non-root
+docker-compose.yml  # J3 : api + PostgreSQL + Prometheus + Grafana
+monitoring/         # J6 : configuration Prometheus
 data/sample/
 data/raw/
 data/gold/

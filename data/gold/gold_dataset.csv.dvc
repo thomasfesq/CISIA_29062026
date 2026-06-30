@@ -1,5 +1,0 @@
-outs:
-- md5: 504da70e14a019afa38335dfc40ad189
-  size: 318198
-  hash: md5
-  path: gold_dataset.csv
