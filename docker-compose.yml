@@ -76,6 +76,13 @@ services:                 # 'services' = la liste de tous les conteneurs à lanc
     ports: ["3000:3000"]                # Interface web de Grafana accessible sur le port 3000 du PC.
     depends_on: [prometheus]            # Grafana démarre APRÈS Prometheus (sa source de données).
                           #   (ici simple ordre de démarrage, sans condition 'service_healthy').
+    environment:
+      GF_SECURITY_ADMIN_USER: admin            # identifiant admin Grafana (DEV)
+      GF_SECURITY_ADMIN_PASSWORD: admin        # mot de passe admin (DEV uniquement)
+    volumes:
+      - ./monitoring/grafana/provisioning:/etc/grafana/provisioning
+                          # Provisioning : Grafana lit ce dossier au démarrage et configure
+                          #   TOUT SEUL la source de données Prometheus (datasource.yml).
 
 volumes:                  # Déclaration des VOLUMES nommés réutilisables par les services ci-dessus.
   pgdata: {}              # Volume 'pgdata' : Docker le gère pour nous ('{}' = options par défaut).

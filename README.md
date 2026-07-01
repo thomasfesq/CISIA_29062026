@@ -76,7 +76,50 @@ curl -X POST http://localhost:8000/predict-tabular \
 
 > Astuce Windows : depuis **PowerShell**, utilise `curl.exe` (pas l'alias `curl`) et remplace l'antislash de fin de ligne par un accent grave ; ou lance la commande depuis **Git Bash / WSL**.
 
+### Appeler l'API depuis Windows PowerShell
+
+L'API doit tourner dans une AUTRE fenetre (commande `uvicorn` ci-dessus). On n'ecrit PAS le JSON a la main : on envoie le fichier `payload.json` fourni.
+
+```powershell
+# Option 1 — Invoke-RestMethod (natif PowerShell)
+Invoke-RestMethod -Uri http://localhost:8000/predict-tabular -Method Post `
+  -ContentType application/json -Headers @{ "X-API-Key" = "dev-key" } -InFile payload.json
+
+# Option 2 — curl.exe (le vrai curl, pas l'alias PowerShell), en UNE seule ligne
+curl.exe -X POST http://localhost:8000/predict-tabular -H "X-API-Key: dev-key" -H "Content-Type: application/json" --data "@payload.json"
+```
+
+Le plus simple, sans aucune syntaxe : ouvrir http://localhost:8000/docs , deplier `POST /predict-tabular`, cliquer **Try it out**, renseigner `X-API-Key = dev-key`, coller le contenu de `payload.json` et **Execute**.
+
+Reponse attendue : `{"machine_id":"MACH-07","proba_panne":0.06,"decision":"ok","model_version":"0.1.0","threshold":0.5}`
+
 Codes attendus : sans cle -> 401, corps trop gros -> 413, trop de requetes -> 429, donnees invalides -> 422.
+
+## Demarrer toute la stack avec Docker (Sprint 3, J3)
+
+Prerequis : Docker installe (scripts `install_docker_windows.ps1` / `install_docker_macos.sh`) et Docker Desktop demarre.
+
+Le plus simple — un seul script qui construit, lance et TESTE les 4 services (api + PostgreSQL + Prometheus + Grafana) :
+
+```bash
+# macOS / Linux / WSL / Git Bash
+chmod +x run_j3_stack.sh && ./run_j3_stack.sh
+```
+```powershell
+# Windows PowerShell
+.\run_j3_stack.ps1
+```
+
+A la main, etape par etape :
+
+```bash
+cp .env.example .env          # identifiants de DEV (cle d'API + mot de passe Postgres)
+docker compose up -d --build  # construit l'image et lance les 4 services
+docker compose ps             # verifier l'etat (db "healthy")
+```
+
+Acces une fois lance : API http://localhost:8000/docs - Prometheus http://localhost:9090 - Grafana http://localhost:3000 (admin / admin, datasource deja branchee).
+Arret : `docker compose down` (ajouter `-v` pour effacer aussi la base). Raccourcis : `make up`, `make ps`, `make logs`, `make down`, `make smoke`.
 
 ## Structure
 

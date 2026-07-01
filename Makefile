@@ -46,3 +46,22 @@ check:
 # Lancer l'API en local avec rechargement auto (module 25)
 serve:
 	uv run uvicorn indusense.api.main:app --reload
+
+# --- Docker (J3 : modules 27-28) ---
+docker-build:
+	docker build -t indusense:local .
+
+up:
+	docker compose up -d --build
+
+down:
+	docker compose down
+
+logs:
+	docker compose logs -f
+
+ps:
+	docker compose ps
+
+smoke:
+	curl -fsS http://localhost:8000/health && echo " OK"
