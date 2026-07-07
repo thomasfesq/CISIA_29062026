@@ -1456,6 +1456,7 @@ dependencies = [
 [package.optional-dependencies]
 dev = [
     { name = "black" },
+    { name = "matplotlib" },
     { name = "pre-commit" },
     { name = "pytest" },
     { name = "ruff" },
@@ -1474,6 +1475,7 @@ requires-dist = [
     { name = "fastapi", specifier = ">=0.111" },
     { name = "joblib", specifier = ">=1.4" },
     { name = "loguru", specifier = ">=0.7" },
+    { name = "matplotlib", marker = "extra == 'dev'", specifier = ">=3.10" },
     { name = "mlflow", marker = "extra == 'mlops'", specifier = ">=2.14" },
     { name = "numpy", specifier = ">=2.0" },
     { name = "pandas", specifier = ">=2.2" },
