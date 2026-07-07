@@ -72,6 +72,8 @@ dev = [
     "black>=24.0",
     # pre-commit : lance ruff/black/etc. AVANT chaque commit git.
     "pre-commit>=3.7",
+    # matplotlib : figures du notebook final CISIA (EDA, courbes PR/ROC, diagnostic, drift).
+    "matplotlib>=3.10",
 ]
 mlops = [
     "dvc>=3.5",
