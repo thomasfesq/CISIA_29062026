@@ -34,9 +34,10 @@ services:                 # 'services' = la liste de tous les conteneurs à lanc
                           #   redirigé vers le 8000 du conteneur -> API accessible depuis le PC.
     environment:          # Variables d'environnement passées DANS le conteneur api.
       INDUSENSE_API_KEY: ${INDUSENSE_API_KEY}   # Clé d'API : valeur LUE depuis le .env (jamais en clair ici).
-      INDUSENSE_DB_URL: postgresql://indusense:${POSTGRES_PASSWORD}@db:5432/indusense
+      INDUSENSE_DB_URL: postgresql+psycopg://indusense:${POSTGRES_PASSWORD}@db:5432/indusense
                           # URL de connexion à la base, décortiquée :
-                          #   postgresql:// = type de base ; 'indusense' = utilisateur ;
+                          #   postgresql+psycopg:// = type de base + DRIVER (psycopg 3, celui du lock ;
+                          #     sans '+psycopg', SQLAlchemy chercherait psycopg2, absent) ; 'indusense' = utilisateur ;
                           #   ${POSTGRES_PASSWORD} = mot de passe (depuis .env) ;
                           #   @db:5432 = on vise le SERVICE 'db' (DNS interne) sur le port PostgreSQL ;
                           #   /indusense = nom de la base de données à utiliser.

@@ -52,3 +52,20 @@ jobs:
       # "-q" (quiet) rend la sortie plus concise.
       - name: Tests
         run: uv run pytest -q
+      # Etape 8 : construit l'image Docker qui sera livree/deployee.
+      # On la tague avec le SHA du commit pour scanner exactement cette version.
+      - name: Build Docker image
+        run: docker build -t indusense-api:${{ github.sha }} .
+      # Etape 9 : scan de securite de l'image finale avec Trivy.
+      # La CI echoue seulement sur les vulnerabilites HIGH/CRITICAL corrigeables.
+      - name: Scan Docker image with Trivy
+        uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          image-ref: indusense-api:${{ github.sha }}
+          format: table
+          exit-code: "1"
+          severity: HIGH,CRITICAL
+          ignore-unfixed: true
+          vuln-type: os,library
+          scanners: vuln
+          version: v0.72.0

@@ -38,3 +38,7 @@ build/
 # Artefacts de demo MLflow (regenerables) — ne pas committer
 mlruns/
 mlflow.db
+
+# base de démo du script Prefect (module 30)
+predictions.db
+predictions.html

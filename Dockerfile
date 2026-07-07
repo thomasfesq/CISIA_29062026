@@ -1,3 +1,4 @@
+# syntax=docker/dockerfile:1
 # =============================================================================
 #  FICHIER : Dockerfile
 #  RÔLE    : "recette" qui décrit COMMENT construire l'image Docker de l'API
@@ -20,8 +21,6 @@
 # La version 'dockerfile:1' débloque des fonctions modernes comme
 # '--mount=type=cache' (voir plus bas). C'est un commentaire SPÉCIAL :
 # il DOIT rester la toute première ligne pour être pris en compte.
-# syntax=docker/dockerfile:1
-
 # Bloc de documentation du projet (commentaires libres, ignorés par Docker).
 # InduSense 4.0 — image API (module 27). Variante A : le modèle pré-entraîné
 # (artifacts/models/) est embarqué -> /ready 200 + /predict-tabular OK d'emblée.

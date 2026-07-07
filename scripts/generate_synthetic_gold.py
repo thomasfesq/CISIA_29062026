@@ -57,7 +57,7 @@ SRC = ROOT / "src"  # dossier des sources du package
 if SRC.exists() and str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))  # on ajoute src/ au chemin d'import Python
 
-# Import APRÈS le bootstrap (d'où le `# noqa: E402` qui dit à ruff « c'est volontaire »).
+# Import APRÈS le bootstrap. Le commentaire `noqa: E402` dit à ruff que c'est volontaire.
 from indusense.features.temporal import add_temporal_features  # noqa: E402
 
 # Ordre EXACT des 15 colonnes du gold : on écrira toujours dans cet ordre.
