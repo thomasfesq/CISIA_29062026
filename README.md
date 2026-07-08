@@ -156,3 +156,14 @@ Le Sprint 3 commence quand le code est :
 - reproductible ;
 - lanceable par une CLI ;
 - protege contre les fuites de donnees temporelles.
+
+
+## TP Data drift & métriques (module 31) — intégré à ce dépôt
+
+Voir **[`docs/TP_drift.md`](docs/TP_drift.md)** : PSI + KS sur les capteurs réels
+(`src/indusense/monitoring/drift.py`, testé par `tests/test_drift_monitoring.py`),
+modèle « en production » au seuil gelé, 4 fenêtres de surveillance (témoin, capteur +8 °C,
+concept drift, campagne haute charge) et dashboard Grafana provisionné (« InduSense — dérive &
+métriques », via la stack `docker compose` du dépôt + `scripts/export_drift_metrics.py`).
+Source de données : flux capteurs complet dans `data/drift_source/` (le `data/raw/` reste le
+jeu de démarrage réduit).
