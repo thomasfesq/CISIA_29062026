@@ -30,3 +30,11 @@ scrape_configs:           # 'scrape_configs' = la LISTE des cibles à surveiller
       - targets: ["api:8000"]   # CIBLE à interroger : le service 'api' sur le port 8000.
                           #   'api' est résolu par le DNS interne de Docker Compose (nom du service)
                           #   -> Prometheus scrape http://api:8000/metrics. C'est le modèle PULL en action.
+
+  # --- Job ajouté (TP drift m31) : l'exporteur tourne SUR LE POSTE (pas dans
+  # Docker) → on le joint via host.docker.internal (Docker Desktop Win/macOS ;
+  # sous Linux, ajouter extra_hosts: ["host.docker.internal:host-gateway"] au
+  # service prometheus du docker-compose).
+  - job_name: indusense-drift
+    static_configs:
+      - targets: ["host.docker.internal:9109"]

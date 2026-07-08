@@ -1,0 +1,284 @@
+incident_id,date,time,operator_name,machine_id,severity,operator_badge,comment,shift
+INC-000192,2025-11-08,08:15,Nathan Richard,M-06,1,OP1006,vibration,matin
+INC-000025,2025-04-12,13:20,Emma Dubois,M-10,1,OP1003,,matin
+INC-000123,2025-07-24,15:05,Jules Moreau,M-06,2,OP1010,bruit anormal,apres-midi
+INC-000165,2025-09-25,14:00,Lina Petit,M-12,1,OP1007,alarme capteur,apres-midi
+INC-000251,2026-01-05,16:10,Enzo Durand,M-3,1,OP1008,arrêt d'urgence,apres-midi
+INC-000227,2025-12-09,12:20,Nathan Richard,M-07,2,OP1006,,matin
+INC-000062,2025-05-20,14:10,Enzo Durand,M-01,1,OP1008,alarme capteur,apres-midi
+INC-000037,2025-04-19,04:10,Sarah Leroy,M-14,1,OP1009,arrêt d'urgence,nuit
+INC-000115,2025-07-21,16:00,Lina Petit,M-13,2,OP1007,vibration,apres-midi
+INC-000241,2025-12-24,14:00,Enzo Durand,M-03,2,OP1008,vibration,apres-midi
+INC-000053,2025-05-10,09:05,Hugo Thomas,M-10,1,OP1004,vibration,matin
+INC-000031,2025-04-14,15:15,Lucas Bernard,M-03,1,OP1002,alarme capteur,apres-midi
+INC-000160,2025-09-15,14:05,Chloé Robert,M-11,2,OP1005,,apres-midi
+INC-000191,2025-11-03,11:05,Emma Dubois,M-08,1,OP1003,piece bloquée,matin
+INC-000273,2026-02-09,18:15,Jules Moreau,M-07,1,OP1010,,apres-midi
+INC-000233,2025-12-18,19:00,Jules Moreau,M-07,3,OP1010,chauffe,apres-midi
+INC-000265,2026-01-21,10:45,Hugo Thomas,M-10,1,OP1004,surconsommation,matin
+INC-000032,2025-04-14,13:20,Enzo Durand,M-04,2,OP1008,défaut qualité,matin
+INC-000171,2025-10-04,18:30,Lucas Bernard,M-02,1,OP1002,,apres-midi
+INC-000021,2025-04-03,09:10,Jules Moreau,M-10,1,OP1010,chauffe,matin
+INC-000216,2025-11-30,09:30,Enzo Durand,M-01,1,OP1008,piece bloquée,matin
+INC-000043,2025-04-29,13:15,Jules Moreau,M-08,3,OP1010,,matin
+INC-000149,2025-08-30,16:00,Emma Dubois,M-07,1,OP1003,,apres-midi
+INC-000030,2025-04-14,10:45,Sarah Leroy,M-14,1,OP1009,chauffe,matin
+INC-000054,2025-05-11,13:05,Nathan Richard,M-06,1,OP1006,chauffe,matin
+INC-000201,2025-11-17,18:00,Nathan Richard,M-06,3,OP1006,,apres-midi
+INC-000020,2025-03-31,11:00,Enzo Durand,M-03,1,OP1008,bruit anormal,matin
+INC-000172,2025-10-05,14:20,Lina Petit,M-12,1,OP1007,,apres-midi
+INC-000272,2026-02-02,15:30,Lina Petit,M-13,2,OP1007,alarme capteur,apres-midi
+INC-000205,2025-11-23,12:15,Camille Martin,M-04,1,OP1001,défaut qualité,matin
+INC-000213,2025-11-26,15:20,Chloé Robert,M-11,1,OP1005,piece bloquée,apres-midi
+INC-000170,2025-10-03,18:15,Chloé Robert,M-14,2,OP1005,arrêt d'urgence,apres-midi
+INC-000083,2025-06-16,12:05,Lucas Bernard,M-05,2,OP1002,surconsommation,matin
+INC-000086,2025-06-20,18:05,Sarah Leroy,M-13,1,OP1009,défaut qualité,apres-midi
+INC-000091,2025-06-29,13:15,Jules Moreau,M-09,1,OP1010,,matin
+INC-000080,2025-06-15,14:10,Lucas Bernard,M-03,1,OP1002,,apres-midi
+INC-000072,2025-05-31,06:20,Camille Martin,M-03,5,OP1001,micro-fuite,matin
+INC-000006,2025-03-09,23:45,Emma Dubois,M-10,2,OP1003,défaut qualité,nuit
+INC-000208,2025-11-25,10:45,Hugo Thomas,M-08,1,OP1004,défaut qualité,matin
+INC-000268,2026-01-27,14:00,Hugo Thomas,M-09,1,OP1004,alarme capteur,apres-midi
+INC-000256,2026-01-09,03:10,Enzo Durand,M-04,2,OP1008,défaut qualité,nuit
+INC-000261,2026-01-18,12:10,Hugo Thomas,M-06,1,OP1004,,matin
+INC-000113,2025-07-19,14:45,Lina Petit,M-12,3,OP1007,bruit anormal,apres-midi
+INC-000073,2025-06-01,23:10,Camille Martin,M-02,1,OP1001,micro-fuite,nuit
+INC-000186,2025-10-30,22:00,Hugo Thomas,M-10,1,OP1004,,nuit
+INC-000008,2025-03-12,22:15,Enzo Durand,M-01,1,OP1008,bruit anormal,nuit
+INC-000129,2025-08-01,16:15,Nathan Richard,M-07,1,OP1006,chauffe,apres-midi
+INC-000148,2025-08-30,18:00,Jules Moreau,M-07,1,OP1010,bruit anormal,apres-midi
+INC-000240,2025-12-24,18:10,Emma Dubois,M-09,5,OP1003,chauffe,apres-midi
+INC-000138,2025-08-10,10:05,Nathan Richard,M-07,1,OP1006,défaut qualité,matin
+INC-000269,2026-01-28,17:30,Lucas Bernard,M-03,2,OP1002,micro-fuite,apres-midi
+INC-000137,2025-08-10,15:30,Sarah Leroy,M-13,1,OP1009,chauffe,apres-midi
+INC-000157,2025-09-14,17:10,Hugo Thomas,M_07,1,OP1004,,apres-midi
+INC-000242,2025-12-26,11:05,Enzo Durand,M-01,3,OP1008,piece bloquée,matin
+INC-000267,2026-01-23,10:45,Enzo Durand,M-05,2,OP1008,défaut qualité,matin
+INC-000128,2025-07-28,20:45,Emma Dubois,M-08,2,OP1003,défaut qualité,apres-midi
+INC-000188,2025-10-31,08:15,Nathan Richard,M-07,1,OP1006,,matin
+INC-000022,2025-04-05,14:30,Nathan Richard,M-10,1,OP1006,,apres-midi
+INC-000238,2025-12-22,09:30,Nathan Richard,M-10,2,OP1006,surconsommation,matin
+INC-000232,2025-12-17,13:00,Lina Petit,M-11,1,OP1007,surconsommation,matin
+INC-000038,2025-04-19,14:00,Emma Dubois,M-08,1,OP1003,bruit anormal,apres-midi
+INC-000245,2025-12-30,18:05,Nathan Richard,M-09,1,OP1006,chauffe,apres-midi
+INC-000056,2025-05-11,21:30,Sarah Leroy,M-11,5,OP1009,surconsommation,apres-midi
+INC-000167,2025-09-27,04:30,Hugo Thomas,M-10,3,OP1004,bruit anormal,nuit
+INC-000248,2026-01-01,19:45,Chloé Robert,M-13,1,OP1005,piece bloquée,apres-midi
+INC-000190,2025-11-01,15:45,Lina Petit,M-14,1,OP1007,,apres-midi
+INC-000101,2025-07-08,15:45,Nathan Richard,M-07,1,OP1006,,apres-midi
+INC-000143,2025-08-20,10:15,Chloé Robert,M-11,1,OP1005,piece bloquée,matin
+INC-000222,2025-12-03,20:20,Lucas Bernard,M-02,1,OP1002,,apres-midi
+INC-000176,2025-10-18,08:30,Enzo Durand,M-02,1,OP1008,micro-fuite,matin
+INC-000029,2025-04-14,12:30,Sarah Leroy,M-11,1,OP1009,bruit anormal,matin
+INC-000247,2025-12-30,12:15,Jules Moreau,M-06,1,OP1010,surconsommation,matin
+INC-000280,2026-02-16,14:20,Lucas Bernard,M-04,3,OP1002,défaut qualité,apres-midi
+INC-000034,2025-04-16,17:05,Lina Petit,M-13,1,OP1007,,apres-midi
+INC-000067,2025-05-27,18:20,Chloé Robert,M-15,1,OP1005,bruit anormal,apres-midi
+INC-000185,2025-10-30,13:45,Lina Petit,M-11,1,OP1007,chauffe,matin
+INC-000162,2025-09-19,14:45,Enzo Durand,M-03,2,OP1008,micro-fuite,apres-midi
+INC-000081,2025-06-16,13:00,Emma Dubois,M-10,1,OP1003,,matin
+INC-000223,2025-12-04,14:10,Sarah Leroy,M-15,2,OP1009,arrêt d'urgence,apres-midi
+INC-000005,2025-03-05,18:05,Lina Petit,M-13,1,OP1007,vibration,apres-midi
+INC-000266,2026-01-22,10:05,Jules Moreau,M-06,3,OP1010,,matin
+INC-000199,2025-11-15,17:00,Nathan Richard,M-07,1,OP1006,chauffe,apres-midi
+INC-000090,2025-06-29,05:05,Lina Petit,M-11,3,OP1007,surconsommation,nuit
+INC-000126,2025-07-27,10:20,Nathan Richard,M-09,1,OP1006,défaut qualité,matin
+INC-000096,2025-07-03,13:05,Sarah Leroy,M-15,1,OP1009,,matin
+INC-000108,2025-07-15,18:10,Chloé Robert,M-12,1,OP1005,,apres-midi
+INC-000180,2025-10-23,11:10,Camille Martin,M-01,2,OP1001,surconsommation,matin
+INC-000221,2025-12-01,12:05,Sarah Leroy,M-15,1,OP1009,,matin
+INC-000024,2025-04-09,09:20,Enzo Durand,M-03,1,OP1008,,matin
+INC-000164,2025-09-22,20:45,Emma Dubois,M-07,1,OP1003,,apres-midi
+INC-000234,2025-12-20,19:15,Chloé Robert,M-13,1,OP1005,vibration,apres-midi
+INC-000145,2025-08-23,14:45,Jules Moreau,M-07,1,OP1010,vibration,apres-midi
+INC-000121,2025-07-23,07:05,Sarah Leroy,M-14,1,OP1009,micro-fuite,matin
+INC-000011,2025-03-13,12:45,Hugo Thomas,M-08,1,OP1004,surconsommation,matin
+INC-000237,2025-12-22,18:45,Lina Petit,M-15,2,OP1007,,apres-midi
+INC-000253,2026-01-06,13:30,Hugo Thomas,M-07,1,OP1004,défaut qualité,matin
+INC-000027,2025-04-13,19:00,Enzo Durand,M-03,1,OP1008,chauffe,apres-midi
+INC-000012,2025-03-15,13:30,Lucas Bernard,M-01,1,OP1002,vibration,matin
+INC-000151,2025-09-01,12:30,Nathan Richard,M-10,1,OP1006,alarme capteur,matin
+INC-000063,2025-05-20,14:00,Camille Martin,M-04,2,OP1001,vibration,apres-midi
+INC-000082,2025-06-16,14:00,Chloé Robert,M-12,1,OP1005,arrêt d'urgence,apres-midi
+INC-000270,2026-01-31,13:10,Nathan Richard,M-09,1,OP1006,,matin
+INC-000055,2025-05-11,02:15,Emma Dubois,M-10,2,OP1003,piece bloquée,nuit
+INC-000168,2025-09-27,13:05,Nathan Richard,M-08,1,OP1006,surconsommation,matin
+INC-000092,2025-07-01,11:15,Enzo Durand,M-03,2,OP1008,micro-fuite,matin
+INC-000276,2026-02-11,19:20,Lina Petit,M-14,1,OP1007,,apres-midi
+INC-000036,2025-04-17,10:00,Nathan Richard,M-07,4,OP1006,bruit anormal,matin
+INC-000277,2026-02-12,16:15,Enzo Durand,M-01,2,OP1008,,apres-midi
+INC-000161,2025-09-16,17:45,Jules Moreau,M-07,4,OP1010,,apres-midi
+INC-000166,2025-09-26,17:10,Hugo Thomas,M_07,2,OP1004,bruit anormal,apres-midi
+INC-000217,2025-11-30,21:20,Emma Dubois,M-06,1,OP1003,chauffe,apres-midi
+INC-000262,2026-01-20,08:45,Chloé Robert,M-12,1,OP1005,surconsommation,matin
+INC-000211,2025-11-26,19:45,Emma Dubois,M-06,1,OP1003,alarme capteur,apres-midi
+INC-000051,2025-05-07,14:30,Chloé Robert,M-12,1,OP1005,,apres-midi
+INC-000244,2025-12-29,15:05,Hugo Thomas,M-07,1,OP1004,alarme capteur,apres-midi
+INC-000239,2025-12-22,12:00,,M-05,1,,,matin
+INC-000131,2025-08-02,11:15,Camille Martin,M-01,2,OP1001,piece bloquée,matin
+INC-000258,2026-01-16,16:30,Lina Petit,M-14,2,OP1007,,apres-midi
+INC-000282,2026-02-24,15:15,Lucas Bernard,M-05,1,OP1002,surconsommation,apres-midi
+INC-000281,2026-02-24,19:10,Lina Petit,M-11,1,OP1007,alarme capteur,apres-midi
+INC-000212,2025-11-26,04:30,Nathan Richard,M-10,3,OP1006,piece bloquée,nuit
+INC-000250,2026-01-05,19:30,Hugo Thomas,M-08,4,OP1004,surconsommation,apres-midi
+INC-000144,2025-08-23,14:15,Chloé Robert,M-12,1,OP1005,vibration,apres-midi
+INC-000210,2025-11-26,15:15,Sarah Leroy,M-13,1,OP1009,bruit anormal,apres-midi
+INC-000198,2025-11-14,12:20,Camille Martin,M-04,2,OP1001,,matin
+INC-000079,2025-06-12,15:05,Lucas Bernard,M-2,2,OP1002,,apres-midi
+INC-000042,2025-04-29,19:30,Enzo Durand,M-04,1,OP1008,surconsommation,apres-midi
+INC-000133,2025-08-06,16:45,Chloé Robert,M-11,1,OP1005,bruit anormal,apres-midi
+INC-000203,2025-11-22,12:20,Jules Moreau,M-09,1,OP1010,,matin
+INC-000014,2025-03-15,13:45,Hugo Thomas,M-07,1,OP1004,,matin
+INC-000278,2026-02-12,05:10,Sarah Leroy,M-13,1,OP1009,défaut qualité,nuit
+INC-000243,2025-12-28,14:45,Jules Moreau,M-06,1,OP1010,alarme capteur,apres-midi
+INC-000197,2025-11-13,09:45,Lina Petit,M-15,1,OP1007,vibration,matin
+INC-000236,2025-12-22,14:20,Enzo Durand,M-02,2,OP1008,bruit anormal,apres-midi
+INC-000153,2025-09-05,09:15,Jules Moreau,M-08,1,OP1010,chauffe,matin
+INC-000220,2025-11-30,13:30,Jules Moreau,M-07,1,OP1010,bruit anormal,matin
+INC-000009,2025-03-12,13:45,Sarah Leroy,M-13,1,OP1009,,matin
+INC-000078,2025-06-10,15:00,Sarah Leroy,M-12,2,OP1009,,apres-midi
+INC-000235,2025-12-21,13:05,Lucas Bernard,M-05,1,OP1002,bruit anormal,matin
+INC-000152,2025-09-05,09:00,Sarah Leroy,M-15,1,OP1009,,matin
+INC-000182,2025-10-26,08:15,Camille Martin,M-02,1,OP1001,vibration,matin
+INC-000120,2025-07-22,15:45,Lina Petit,M-11,3,OP1007,,apres-midi
+INC-000260,2026-01-16,22:15,Lina Petit,M-12,1,OP1007,,nuit
+INC-000064,2025-05-22,11:20,Camille Martin,M-03,4,OP1001,,matin
+INC-000109,2025-07-17,16:15,Lucas Bernard,M-03,2,OP1002,micro-fuite,apres-midi
+INC-000142,2025-08-17,15:15,Lina Petit,M-11,1,OP1007,bruit anormal,apres-midi
+INC-000089,2025-06-28,17:45,Lucas Bernard,M-04,1,OP1002,,apres-midi
+INC-000228,2025-12-10,12:45,Hugo Thomas,M-10,1,OP1004,,matin
+INC-000202,2025-11-22,15:00,Enzo Durand,M-03,1,OP1008,chauffe,apres-midi
+INC-000045,2025-05-01,15:05,Nathan Richard,M-07,1,OP1006,chauffe,apres-midi
+INC-000194,2025-11-09,13:00,Emma Dubois,M-10,2,OP1003,arrêt d'urgence,matin
+INC-000174,2025-10-10,22:05,Chloé Robert,M-12,1,OP1005,,nuit
+INC-000066,2025-05-27,12:30,Lucas Bernard,M-03,3,OP1002,,matin
+INC-000061,2025-05-18,16:45,Enzo Durand,M-04,1,OP1008,défaut qualité,apres-midi
+INC-000094,2025-07-02,17:00,,M-03,3,,,apres-midi
+INC-000257,2026-01-13,10:05,Emma Dubois,M-09,1,OP1003,piece bloquée,matin
+INC-000263,2026-01-20,18:10,Jules Moreau,M-08,3,OP1010,micro-fuite,apres-midi
+INC-000249,2026-01-03,17:00,,M-08,1,,alarme capteur,apres-midi
+INC-000158,2025-09-14,06:15,Lina Petit,M-11,2,OP1007,bruit anormal,matin
+INC-000001,2025-02-26,08:10,Lina Petit,M-11,1,OP1007,,matin
+INC-000046,2025-05-02,19:00,Enzo Durand,M-01,3,OP1008,arrêt d'urgence,apres-midi
+INC-000154,2025-09-05,19:30,Enzo Durand,M-01,3,OP1008,,apres-midi
+INC-000041,2025-04-28,10:05,Nathan Richard,M-08,4,OP1006,micro-fuite,matin
+INC-000060,2025-05-16,19:15,Emma Dubois,M-09,1,OP1003,alarme capteur,apres-midi
+INC-000230,2025-12-14,10:15,Chloé Robert,M-12,2,OP1005,,matin
+INC-000047,2025-05-04,10:05,Sarah Leroy,M-11,1,OP1009,bruit anormal,matin
+INC-000196,2025-11-10,08:00,Enzo Durand,M-02,1,OP1008,défaut qualité,matin
+INC-000224,2025-12-06,16:45,Sarah Leroy,M-12,1,OP1009,chauffe,apres-midi
+INC-000105,2025-07-11,13:15,Enzo Durand,M-02,1,OP1008,piece bloquée,matin
+INC-000134,2025-08-09,13:30,Jules Moreau,M-08,1,OP1010,alarme capteur,matin
+INC-000017,2025-03-20,16:15,Enzo Durand,M-02,1,OP1008,chauffe,apres-midi
+INC-000259,2026-01-16,12:00,Lina Petit,M-11,3,OP1007,défaut qualité,matin
+INC-000175,2025-10-14,13:20,Lucas Bernard,M-01,4,OP1002,piece bloquée,matin
+INC-000117,2025-07-22,14:15,Lucas Bernard,M-01,1,OP1002,surconsommation,apres-midi
+INC-000255,2026-01-09,13:00,Sarah Leroy,M-14,4,OP1009,bruit anormal,matin
+INC-000075,2025-06-06,14:30,Lucas Bernard,M-04,1,OP1002,vibration,apres-midi
+INC-000111,2025-07-18,20:05,Sarah Leroy,M-12,1,OP1009,vibration,apres-midi
+INC-000146,2025-08-25,12:10,Camille Martin,M-03,1,OP1001,piece bloquée,matin
+INC-000039,2025-04-20,16:45,Nathan Richard,M-06,1,OP1006,piece bloquée,apres-midi
+INC-000028,2025-04-13,07:10,Nathan Richard,M-07,5,OP1006,,matin
+INC-000141,2025-08-17,17:15,Jules Moreau,M-08,1,OP1010,arrêt d'urgence,apres-midi
+INC-000122,2025-07-24,06:00,Jules Moreau,M-08,1,OP1010,bruit anormal,matin
+INC-000219,2025-11-30,13:45,Chloé Robert,M-11,1,OP1005,,matin
+INC-000088,2025-06-28,23:30,Camille Martin,M-03,1,OP1001,bruit anormal,nuit
+INC-000010,2025-03-12,06:15,Chloé Robert,M-11,1,OP1005,piece bloquée,matin
+INC-000007,2025-03-10,11:05,Enzo Durand,M-03,1,OP1008,bruit anormal,matin
+INC-000189,2025-10-31,11:20,Nathan Richard,M-07,1,OP1006,,matin
+INC-000193,2025-11-09,12:05,Nathan Richard,M-07,1,OP1006,vibration,matin
+INC-000195,2025-11-10,21:30,Jules Moreau,M-09,1,OP1010,,apres-midi
+INC-000283,2026-02-25,14:00,Emma Dubois,M-08,1,OP1003,surconsommation,apres-midi
+INC-000218,2025-11-30,15:45,Chloé Robert,M-12,4,OP1005,bruit anormal,apres-midi
+INC-000150,2025-09-01,16:45,Emma Dubois,M-09,1,OP1003,vibration,apres-midi
+INC-000140,2025-08-13,19:15,Chloé Robert,M-12,4,OP1005,alarme capteur,apres-midi
+INC-000068,2025-05-28,11:15,Nathan Richard,M-08,2,OP1006,bruit anormal,matin
+INC-000004,2025-03-04,16:20,Emma Dubois,M-08,1,OP1003,piece bloquée,apres-midi
+INC-000087,2025-06-23,15:45,Camille Martin,M-03,5,OP1001,piece bloquée,apres-midi
+INC-000178,2025-10-18,13:10,Jules Moreau,M-09,1,OP1010,alarme capteur,matin
+INC-000207,2025-11-24,12:15,Sarah Leroy,M-15,1,OP1009,,matin
+INC-000049,2025-05-06,11:45,Nathan Richard,M-07,1,OP1006,,matin
+INC-000118,2025-07-22,10:30,Enzo Durand,M-03,1,OP1008,surconsommation,matin
+INC-000173,2025-10-07,11:10,Chloé Robert,M-14,1,OP1005,bruit anormal,matin
+INC-000052,2025-05-08,14:00,Lina Petit,M-13,1,OP1007,,apres-midi
+INC-000002,2025-02-28,16:30,Lucas Bernard,M-01,3,OP1002,vibration,apres-midi
+INC-000019,2025-03-29,17:05,Sarah Leroy,M-14,2,OP1009,chauffe,apres-midi
+INC-000013,2025-03-15,18:05,Hugo Thomas,M-6,3,OP1004,bruit anormal,apres-midi
+INC-000050,2025-05-06,15:30,Chloé Robert,M-11,1,OP1005,défaut qualité,apres-midi
+INC-000057,2025-05-14,15:45,Sarah Leroy,M-15,3,OP1009,chauffe,apres-midi
+INC-000179,2025-10-18,13:20,Lucas Bernard,M-01,1,OP1002,piece bloquée,matin
+INC-000026,2025-04-12,12:05,Enzo Durand,M-05,1,OP1008,chauffe,matin
+INC-000184,2025-10-29,13:00,Sarah Leroy,M-12,1,OP1009,bruit anormal,matin
+INC-000102,2025-07-08,12:15,Nathan Richard,M-07,3,OP1006,piece bloquée,matin
+INC-000187,2025-10-30,23:20,Chloé Robert,M-13,1,OP1005,surconsommation,nuit
+INC-000044,2025-04-30,12:00,Chloé Robert,M-12,1,OP1005,chauffe,matin
+INC-000130,2025-08-01,10:10,Emma Dubois,M-07,3,OP1003,alarme capteur,matin
+INC-000200,2025-11-17,16:10,Hugo Thomas,M-07,1,OP1004,,apres-midi
+INC-000183,2025-10-26,13:45,Lucas Bernard,M-01,1,OP1002,chauffe,matin
+INC-000204,2025-11-22,12:45,Camille Martin,M-04,1,OP1001,micro-fuite,matin
+INC-000104,2025-07-10,07:30,Jules Moreau,M-08,4,OP1010,,matin
+INC-000015,2025-03-17,19:10,Hugo Thomas,M-07,2,OP1004,chauffe,apres-midi
+INC-000135,2025-08-09,15:15,Sarah Leroy,M-13,1,OP1009,piece bloquée,apres-midi
+INC-000264,2026-01-21,10:15,Emma Dubois,M-09,4,OP1003,vibration,matin
+INC-000155,2025-09-06,15:10,Emma Dubois,M-09,3,OP1003,,apres-midi
+INC-000116,2025-07-21,05:05,Enzo Durand,M-03,2,OP1008,alarme capteur,nuit
+INC-000110,2025-07-17,16:10,Jules Moreau,M-08,1,OP1010,alarme capteur,apres-midi
+INC-000071,2025-05-31,16:45,Lina Petit,M-12,4,OP1007,micro-fuite,apres-midi
+INC-000252,2026-01-06,12:05,Hugo Thomas,M-07,1,OP1004,,matin
+INC-000159,2025-09-15,12:30,Lucas Bernard,M-05,3,OP1002,bruit anormal,matin
+INC-000246,2025-12-30,13:30,Lina Petit,M-12,1,OP1007,vibration,matin
+INC-000016,2025-03-20,13:30,Lina Petit,M-11,1,OP1007,,matin
+INC-000229,2025-12-10,12:05,Enzo Durand,M-03,3,OP1008,chauffe,matin
+INC-000147,2025-08-26,18:00,Camille Martin,M-05,2,OP1001,surconsommation,apres-midi
+INC-000206,2025-11-23,17:20,Chloé Robert,M-12,1,OP1005,arrêt d'urgence,apres-midi
+INC-000023,2025-04-07,18:20,Emma Dubois,M-07,1,OP1003,bruit anormal,apres-midi
+INC-000139,2025-08-12,18:30,Nathan Richard,M-07,2,OP1006,bruit anormal,apres-midi
+INC-000059,2025-05-15,10:00,Jules Moreau,M-07,5,OP1010,bruit anormal,matin
+INC-000163,2025-09-21,12:45,Emma Dubois,M-10,4,OP1003,micro-fuite,matin
+INC-000076,2025-06-09,07:20,Jules Moreau,M-09,1,OP1010,surconsommation,matin
+INC-000065,2025-05-23,08:20,Nathan Richard,M-06,1,OP1006,bruit anormal,matin
+INC-000070,2025-05-30,18:15,Enzo Durand,M-02,2,OP1008,,apres-midi
+INC-000279,2026-02-13,15:05,Hugo Thomas,M-07,3,OP1004,chauffe,apres-midi
+INC-000132,2025-08-02,19:15,Enzo Durand,M-01,1,OP1008,,apres-midi
+INC-000169,2025-09-30,15:45,Enzo Durand,M-03,1,OP1008,,apres-midi
+INC-000077,2025-06-09,21:30,Sarah Leroy,M-12,1,OP1009,défaut qualité,apres-midi
+INC-000275,2026-02-10,11:15,Emma Dubois,M-08,1,OP1003,défaut qualité,matin
+INC-000035,2025-04-16,16:20,Lucas Bernard,M-05,4,OP1002,bruit anormal,apres-midi
+INC-000156,2025-09-12,12:20,Nathan Richard,M-06,2,OP1006,bruit anormal,matin
+INC-000095,2025-07-03,13:15,Emma Dubois,M-09,1,OP1003,,matin
+INC-000119,2025-07-22,10:15,Enzo Durand,M-03,1,OP1008,,matin
+INC-000214,2025-11-28,14:45,Enzo Durand,M-03,1,OP1008,bruit anormal,apres-midi
+INC-000098,2025-07-06,13:20,Enzo Durand,M-03,1,OP1008,défaut qualité,matin
+INC-000103,2025-07-09,08:15,Lucas Bernard,M-01,1,OP1002,vibration,matin
+INC-000181,2025-10-24,09:15,Lucas Bernard,M-05,1,OP1002,surconsommation,matin
+INC-000093,2025-07-02,08:10,Sarah Leroy,M-14,1,OP1009,,matin
+INC-000125,2025-07-26,08:45,Enzo Durand,M-03,2,OP1008,arrêt d'urgence,matin
+INC-000100,2025-07-07,14:10,Jules Moreau,M-07,1,OP1010,,apres-midi
+INC-000106,2025-07-12,09:10,Lina Petit,M-12,2,OP1007,surconsommation,matin
+INC-000136,2025-08-10,20:45,Hugo Thomas,M-09,3,OP1004,défaut qualité,apres-midi
+INC-000177,2025-10-18,10:20,Enzo Durand,M-05,1,OP1008,chauffe,matin
+INC-000271,2026-02-01,18:20,Emma Dubois,M-06,1,OP1003,piece bloquée,apres-midi
+INC-000085,2025-06-20,11:05,Jules Moreau,M-09,1,OP1010,vibration,matin
+INC-000040,2025-04-22,04:20,Lucas Bernard,M-03,1,OP1002,défaut qualité,nuit
+INC-000003,2025-02-28,12:00,Camille Martin,M-03,1,OP1001,vibration,matin
+INC-000069,2025-05-30,19:10,Nathan Richard,M-07,1,OP1006,,apres-midi
+INC-000209,2025-11-25,14:30,Chloé Robert,M-12,4,OP1005,vibration,apres-midi
+INC-000274,2026-02-10,11:15,Camille Martin,M-01,1,OP1001,,matin
+INC-000254,2026-01-08,10:10,Jules Moreau,M-08,1,OP1010,bruit anormal,matin
+INC-000112,2025-07-18,10:15,Nathan Richard,M-08,1,OP1006,défaut qualité,matin
+INC-000225,2025-12-07,08:10,Sarah Leroy,M-12,3,OP1009,chauffe,matin
+INC-000033,2025-04-16,18:30,Nathan Richard,M-06,1,OP1006,chauffe,apres-midi
+INC-000074,2025-06-02,09:05,Hugo Thomas,M-06,1,OP1004,surconsommation,matin
+INC-000048,2025-05-05,09:30,Nathan Richard,M-08,4,OP1006,,matin
+INC-000127,2025-07-28,10:15,Lucas Bernard,M-05,1,OP1002,piece bloquée,matin
+INC-000114,2025-07-21,12:00,Enzo Durand,M-02,1,OP1008,,matin
+INC-000097,2025-07-05,12:45,Lucas Bernard,M-03,1,OP1002,arrêt d'urgence,matin
+INC-000226,2025-12-08,11:45,Nathan Richard,M-08,1,OP1006,micro-fuite,matin
+INC-000215,2025-11-29,16:10,Emma Dubois,M-06,1,OP1003,chauffe,apres-midi
+INC-000058,2025-05-14,12:05,Lucas Bernard,M-03,3,OP1002,alarme capteur,matin
+INC-000124,2025-07-25,15:20,Lina Petit,M-15,1,OP1007,vibration,apres-midi
+INC-000107,2025-07-13,19:20,Lucas Bernard,M-05,1,OP1002,bruit anormal,apres-midi
+INC-000084,2025-06-18,15:00,Nathan Richard,M-07,1,OP1006,micro-fuite,apres-midi
+INC-000018,2025-03-27,15:05,Jules Moreau,M-09,2,OP1010,,apres-midi
+INC-000231,2025-12-15,16:30,Sarah Leroy,M-12,2,OP1009,défaut qualité,apres-midi
+INC-000099,2025-07-06,12:00,Jules Moreau,M-08,1,OP1010,bruit anormal,matin
