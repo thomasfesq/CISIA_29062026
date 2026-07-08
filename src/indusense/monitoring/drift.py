@@ -15,8 +15,8 @@ import pandas as pd
 from scipy import stats
 
 #: Seuils de lecture usuels du PSI (conventions credit scoring, cf. m31 §2.2).
-SEUIL_PSI_SURVEILLER = 0.10
-SEUIL_PSI_FORT = 0.25
+SEUIL_PSI_SURVEILLER = 0.25
+SEUIL_PSI_FORT = 0.10
 
 #: Features capteurs surveillées par défaut (drift spec InduSense).
 FEATURES_SURVEILLEES = ("temperature", "pressure_bar")
