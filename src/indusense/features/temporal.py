@@ -59,7 +59,8 @@ def add_temporal_features(
                 # `window=window` en argument par défaut = capture la bonne valeur de
                 # `window` à chaque tour de boucle (évite le piège de « late binding »
                 # des lambdas Python, qui sinon prendraient toutes la dernière valeur).
-                lambda series, window=window: series.rolling(window)
+                lambda series, window=window: series.shift(1)
+                .rolling(window)
                 .mean()
             )
     # --- 4) Renvoyer le tableau enrichi (colonnes _lagN et _rollN_mean ajoutées)
