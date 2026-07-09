@@ -192,7 +192,7 @@ async def add_request_id(request: Request, call_next):
 # sensibles. FastAPI l'exécutera AVANT la route ; si elle lève une exception,
 # la route n'est jamais atteinte.
 #   - `x_api_key` : FastAPI lit pour nous l'en-tête HTTP "X-API-Key" (grâce à
-#     `Header(None, alias="X-Api-Token")`) et nous le donne. `None` = valeur par
+#     `Header(None, alias="X-API-Key")`) et nous le donne. `None` = valeur par
 #     défaut si l'en-tête est absent.
 def require_api_key(x_api_key: str | None = Header(None, alias="X-API-Key")) -> None:
     # Clé absente OU invalide -> 401 (et non 422) : statut sémantiquement correct pour l'auth.
