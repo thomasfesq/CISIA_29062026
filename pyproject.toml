@@ -30,7 +30,7 @@ version = "0.1.0"
 description = "Starter propre InduSense pour le Sprint 3 CISIA"
 # Version de Python IMPOSEE : au minimum 3.13, mais strictement avant 3.14.
 # => Tout le monde doit travailler avec Python 3.13 (reproductibilite).
-requires-python = ">=3.99,<4.0"
+requires-python = ">=3.13,<4.0"
 # Dependances de PRODUCTION : indispensables pour faire tourner le projet.
 dependencies = [
     # pandas : manipulation de tableaux de donnees (DataFrame), lecture CSV/TSV.
@@ -96,7 +96,7 @@ packages = ["src/indusense"]
 # Largeur de ligne maximale toleree (au-dela : avertissement de style).
 line-length = 100
 # Version de Python ciblee pour les regles d'analyse (ici 3.13).
-target-version = "py313"
+target-version = "313"
 # Dossiers a EXCLURE de l'analyse (environnements virtuels, dossiers de build).
 extend-exclude = [".venv*", "venv*", "dist", "build"]
 
