@@ -74,7 +74,7 @@ services:                 # 'services' = la liste de tous les conteneurs à lanc
 
   grafana:                # --- SERVICE 4 : Grafana, tableaux de bord de visualisation ---
     image: grafana/grafana              # Image officielle Grafana.
-    ports: ["300:3000"]                # Interface web de Grafana accessible sur le port 3000 du PC.
+    ports: ["3000:3000"]                # Interface web de Grafana accessible sur le port 3000 du PC.
     depends_on: [prometheus]            # Grafana démarre APRÈS Prometheus (sa source de données).
                           #   (ici simple ordre de démarrage, sans condition 'service_healthy').
     environment:
