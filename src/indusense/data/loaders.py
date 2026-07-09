@@ -100,7 +100,7 @@ def build_dataset(
     pres: pd.DataFrame,  # mesures de pression   (machine, timestamp, pressure_bar)
     inc: pd.DataFrame,  # incidents             (machine, incident_ts)
     window_hours: int = 24,  # on étiquette « panne » les N heures AVANT chaque incident
-    tolerance_minutes: int = 5,  # écart max toléré pour apparier température et pression
+    tolerance_minutes: int = 90,  # écart max toléré pour apparier température et pression
 ) -> pd.DataFrame:
     """Join sensors and derive binary target `panne`.
 
