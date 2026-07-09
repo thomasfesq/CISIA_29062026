@@ -21,7 +21,7 @@ heterogenes. Ce package fournit :
 ```powershell
 cd "C:\chemin\vers\indusense-sprint3-starter"
 uv venv --python 3.13
-uv sync --extra all
+uv sync --extra dev
 uv run python --version
 uv run pytest -q
 uv run ruff check .

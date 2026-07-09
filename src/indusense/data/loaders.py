@@ -44,7 +44,7 @@ def normalize_machine_id(raw: str) -> str:
         raise ValueError(f"machine_id sans numero : {raw!r}")  # on échoue clairement
     # On reformate TOUJOURS pareil : "MACH-" + numéro sur 2 chiffres (02d = padding à 2 zéros).
     # Ainsi "M-2", "MACH_02", "M_2" deviennent tous "MACH-02" → plus de doublons cachés.
-    return f"MACH-{match.group(1)}"
+    return f"MACH-{int(match.group(1)):02d}"  # group(1) = le nombre capturé par la regex
 
 
 def load_temperature(path: Path) -> pd.DataFrame:
@@ -59,7 +59,7 @@ def load_pressure(path: Path) -> pd.DataFrame:
     # Les dates de pression portent un fuseau horaire (« tz-aware »). On les lit
     # (format="mixed" = formats variés tolérés, utc=True), PUIS on enlève le fuseau
     # (tz_localize(None)) pour qu'elles soient comparables avec les autres capteurs.
-    df["timestamp"] = pd.to_datetime(df["timestamp"], format="mixed")
+    df["timestamp"] = pd.to_datetime(df["timestamp"], format="mixed", utc=True).dt.tz_localize(None)
     df["machine"] = df["machine_id"].map(normalize_machine_id)
     return df[["machine", "timestamp", "pressure_bar"]]
 
