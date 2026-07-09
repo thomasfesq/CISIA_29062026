@@ -44,7 +44,7 @@ def normalize_machine_id(raw: str) -> str:
         raise ValueError(f"machine_id sans numero : {raw!r}")  # on échoue clairement
     # On reformate TOUJOURS pareil : "MACH-" + numéro sur 2 chiffres (02d = padding à 2 zéros).
     # Ainsi "M-2", "MACH_02", "M_2" deviennent tous "MACH-02" → plus de doublons cachés.
-    return f"MACH-{match.group(1)}"
+    return f"MACH-{int(match.group(1)):02d}"
 
 
 def load_temperature(path: Path) -> pd.DataFrame:
