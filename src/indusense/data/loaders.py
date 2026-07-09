@@ -44,7 +44,7 @@ def normalize_machine_id(raw: str) -> str:
         raise ValueError(f"machine_id sans numero : {raw!r}")  # on échoue clairement
     # On reformate TOUJOURS pareil : "MACH-" + numéro sur 2 chiffres (02d = padding à 2 zéros).
     # Ainsi "M-2", "MACH_02", "M_2" deviennent tous "MACH-02" → plus de doublons cachés.
-    return f"MACH-{int(match.group(1)):02d}"
+    return f"MACH-{int(match.group(1)):02d}"  # group(1) = le nombre capturé par la regex
 
 
 def load_temperature(path: Path) -> pd.DataFrame:
@@ -100,7 +100,7 @@ def build_dataset(
     pres: pd.DataFrame,  # mesures de pression   (machine, timestamp, pressure_bar)
     inc: pd.DataFrame,  # incidents             (machine, incident_ts)
     window_hours: int = 24,  # on étiquette « panne » les N heures AVANT chaque incident
-    tolerance_minutes: int = 90,  # écart max toléré pour apparier température et pression
+    tolerance_minutes: int = 5,  # écart max toléré pour apparier température et pression
 ) -> pd.DataFrame:
     """Join sensors and derive binary target `panne`.
 

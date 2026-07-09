@@ -37,4 +37,4 @@ scrape_configs:           # 'scrape_configs' = la LISTE des cibles à surveiller
   # service prometheus du docker-compose).
   - job_name: indusense-drift
     static_configs:
-      - targets: ["host.docker.internal:9109"]
+      - targets: ["localhost:9109"]

@@ -30,7 +30,7 @@ services:                 # 'services' = la liste de tous les conteneurs à lanc
   api:                    # --- SERVICE 1 : l'API InduSense (notre application web) ---
     build: .              # On CONSTRUIT l'image à partir du Dockerfile du dossier courant ('.').
                           #   (au lieu de 'image:' qui irait télécharger une image toute prête).
-    ports: ["8000:8000"]  # Publication de port "HÔTE:CONTENEUR" : le 8000 de la machine est
+    ports: ["8000:80"]  # Publication de port "HÔTE:CONTENEUR" : le 8000 de la machine est
                           #   redirigé vers le 8000 du conteneur -> API accessible depuis le PC.
     environment:          # Variables d'environnement passées DANS le conteneur api.
       INDUSENSE_API_KEY: ${INDUSENSE_API_KEY}   # Clé d'API : valeur LUE depuis le .env (jamais en clair ici).
@@ -74,7 +74,7 @@ services:                 # 'services' = la liste de tous les conteneurs à lanc
 
   grafana:                # --- SERVICE 4 : Grafana, tableaux de bord de visualisation ---
     image: grafana/grafana              # Image officielle Grafana.
-    ports: ["3000:3000"]                # Interface web de Grafana accessible sur le port 3000 du PC.
+    ports: ["300:3000"]                # Interface web de Grafana accessible sur le port 3000 du PC.
     depends_on: [prometheus]            # Grafana démarre APRÈS Prometheus (sa source de données).
                           #   (ici simple ordre de démarrage, sans condition 'service_healthy').
     environment:
