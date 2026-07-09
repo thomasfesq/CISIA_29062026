@@ -59,7 +59,7 @@ def load_pressure(path: Path) -> pd.DataFrame:
     # Les dates de pression portent un fuseau horaire (« tz-aware »). On les lit
     # (format="mixed" = formats variés tolérés, utc=True), PUIS on enlève le fuseau
     # (tz_localize(None)) pour qu'elles soient comparables avec les autres capteurs.
-    df["timestamp"] = pd.to_datetime(df["timestamp"], format="mixed")
+    df["timestamp"] = pd.to_datetime(df["timestamp"], format="mixed", utc=True).dt.tz_localize(None)
     df["machine"] = df["machine_id"].map(normalize_machine_id)
     return df[["machine", "timestamp", "pressure_bar"]]
 
