@@ -131,7 +131,7 @@ async def limit_body_size(request: Request, call_next):
 # si la limite est dépassée, l'exception levée bloque l'accès.
 #   - `-> None` : la fonction ne renvoie rien d'utile. Soit elle laisse passer
 #     (silencieusement), soit elle lève une exception qui interrompt tout.
-def rate_limit(request: Request, limit: int = 2, window: float = 60.0) -> None:
+def rate_limit(request: Request, limit: int = 60, window: float = 60.0) -> None:
     # Paramètres avec valeurs par défaut :
     #   - `limit`  = 60   : nombre maximum de requêtes autorisées par IP...
     #   - `window` = 60.0 : ...sur une fenêtre de 60 secondes.
