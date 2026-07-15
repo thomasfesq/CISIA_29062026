@@ -29,7 +29,13 @@ services:                 # 'services' = la liste de tous les conteneurs à lanc
 
   api:                    # --- SERVICE 1 : l'API InduSense (notre application web) ---
     build: .              # On CONSTRUIT l'image à partir du Dockerfile du dossier courant ('.').
-                          #   (au lieu de 'image:' qui irait télécharger une image toute prête).
+    image: indusense-api:${IMAGE_TAG:-v1.0}
+                          # NOM:TAG donné à l'image construite ('build:' + 'image:' ensemble :
+                          #   Compose construit l'image PUIS la tague sous ce nom, rien n'est téléchargé).
+                          #   ${IMAGE_TAG:-v1.0} = valeur de la variable IMAGE_TAG (.env ou shell),
+                          #   sinon 'v1.0' par défaut.
+                          #   -> Rend possible le ROLLBACK « image N-1 » (modules 37/39, Sprint 4) :
+                          #      IMAGE_TAG=v1.0 docker compose up -d api   (rebascule sur l'image taguée v1.0)
     ports: ["8000:8000"]  # Publication de port "HÔTE:CONTENEUR" : le 8000 de la machine est
                           #   redirigé vers le 8000 du conteneur -> API accessible depuis le PC.
     environment:          # Variables d'environnement passées DANS le conteneur api.
